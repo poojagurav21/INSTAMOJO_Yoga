@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Instamojo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Instamojo.Application.Contracts\Instamojo.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PayPal" Version="2.0.0-rc2" />
+    <PackageReference Include="RestSharp" Version="109.0.0-preview.1" />
+    <PackageReference Include="Volo.Abp.Account.HttpApi" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.TenantManagement.HttpApi" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.SettingManagement.HttpApi" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+<!-- <i class="fa fa-cc-paypal" style="font-size:36px;color: green;"></i><button class="btn btn-outline-success" (click)="byerezurepay()">MakePayment</button> -->
+<div class="container">
+    <div class="card">
+        <table class="table mt-5">
+              <thead class="bg-info">           
+               </thead>
+               <tbody >  
+                <tr>
+                    <td>CourseName</td>
+                    <td>TotalFee</td>
+                    <td> </td>
+                </tr>            
+                    <tr *ngFor="let c of applied">              
+                        <td>{{c.courseName}}</td>                             
+                        <td>{{c.totalFee}}</td>
+                        <td>
+                            <a style="border:none;text-decoration: underline;color: blue;cursor: pointer;" 
+                             (click)="paynow(c)">MakePayment</a></td>
+                    </tr>           
+                </tbody>   
+        </table>
+    </div>
+</div> 
+
