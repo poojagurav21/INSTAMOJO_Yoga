@@ -25,7 +25,7 @@ export class PaymentComponent implements OnInit {
    payment_id=""
    transaction_id=""
    orderid=""
-   paymentRequestId="string"
+   //paymentRequestId="string"
    createpayment = {} as CreatePaymentDTO;
    paymentdetail={} as PaymentDetailsDTO;
   ngOnInit(): void {
@@ -37,14 +37,14 @@ export class PaymentComponent implements OnInit {
      this. paymentdetail.paymentRequestID=params.payment_request_id;
      this. paymentdetail.paymentStatus=params.payment_status;
     /// this.paymentdetail.status=params.payment_status
-    //  if( this.paymentdetail.paymentID.length=0)
-    // {
+     if( this.paymentdetail.paymentID.length!=0)
+    {
    this.paymentAppServicesService.createPaymentDetailsByInput(this.paymentdetail).subscribe((response) => {
       
     });
      }
      
-      //}
+      }
     );
 
   }
@@ -72,7 +72,7 @@ export class PaymentComponent implements OnInit {
       phone: [this.createpayment.phone || '', Validators.required],
       amount: [this.createpayment.amount || '', Validators.required],
       description: [this.createpayment.description || '', Validators.required],
-      paymentRequestId:[this.createpayment.paymentRequest_id || '', Validators.required]
+    //  paymentRequestId:[this.createpayment.paymentRequest_id || '', Validators.required]
       
     });
   }

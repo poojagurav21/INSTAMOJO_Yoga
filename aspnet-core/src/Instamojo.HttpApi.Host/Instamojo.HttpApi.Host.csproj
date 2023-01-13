@@ -15,7 +15,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="PayPal" Version="2.0.0-rc2" />
+    <PackageReference Include="PayPal.Api" Version="1.0.6" />
     <PackageReference Include="PayPalCoreSDK" Version="1.7.1" />
+    <PackageReference Include="PayPalHttp" Version="1.0.1" />
+    <PackageReference Include="PayPalMerchantSDK" Version="2.16.250" />
     <PackageReference Include="RestSharp" Version="109.0.0-preview.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="6.1.1-dev-00293" />
     <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
