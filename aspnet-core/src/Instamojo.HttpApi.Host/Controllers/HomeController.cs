@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PayPal.v1.Payments;
-using PayPal;
+//using PayPal.v1.Payments;
+//using PayPal;
 using System.Collections.Generic;
 using System;
 using Volo.Abp.AspNetCore.Mvc;
